@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html id="top">
+	<head>	
+		<title>Folding@home - Description Feedback</title>
+
+		<meta charset="UTF-8">
+
+		<link href="http://fonts.googleapis.com/css?family=Syncopate:700|Carme" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/Home.css">
+	</head>
+
+	<body>
+		<div id="page">
+			<div id="header">
+				FAH Project Description Feedback
+			</div>
+
+			<div id="content">
+				<div id="leftPane">
+
+					<div id="userStats">
+						<span id="welcome">Welcome Bob!</span>
+						<span id="rank">Rank 3</span>
+
+						<table>
+							<tr>
+								<td>A</td>
+								<td>You</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>36</td>
+								<td>42</td>
+								<td>46</td>
+							</tr>
+						</table>
+					</div>
+
+					<div id="recentContribs">
+						<button>8033 - suggestion</button>
+						<button>8014 - comment</button>
+						<button>7456 - suggestion</button>
+						<button>4795 - suggestion</button>
+						<button>9534 - comment</button>
+						<button>5589 - comment</button>
+						<button>4468 - comment</button>
+						<button>10975 - suggestion</button>
+						<button>12593 - comment</button>
+						<button>4926 - suggestion</button>
+					</div>
+				</div>
+
+				<div id="centerPane">
+					<span id="projectNum">Projects 2968, 2969, and 2973</span>
+
+					<span id='project-info'>
+						This project folds a small beta hairpin peptide (trpzip2). We aim to simulate the IR spectra of the trpzip2 folding. Project 2972 corresponds to simulations at 400K, while Project 2973 corresponds to simulations at 450K.<br>
+
+						<h3><i>Technical details</i></h3>
+						This project (Trpzip2 Folding at 400K) is set for 80.70 points, a preferred deadline of 16.70 days, and a final deadline 24.00 days.  This project uses the GROMACS FAH core software and is hosted by Folding@home server 143.89.28.70.<BR><BR>
+
+						<H3><I>Manager for this project</I></H3>
+						<img src=http://compbio.ust.hk/public_html/Huang_pic.jpg align=right>
+
+						This project is managed by Prof. Xuhui Huang at Hong Kong University of Science and Technology.  The main goal of the Huang lab is to understand and manipulate fundamental biological processes associated with conformational changes by developing and applying novel computational tools which bridge the gap between experiments and simulations.  Examples of our interested research areas include RNA folding, protein misfolding/aggregration, conformational changes in Transcription Elongation, and the development of Markov State Models for long timescale dynamics. We have set up a hub for Folding@Home in Asia.
+					</span>
+
+					<div id="opinion">
+						<input type="range" min="-2" max="2" value="0" step="1" onchange="changeComprehensionLevel(this.value)"/>
+						<span id="comprehensionLevel">No opinion</span>
+
+						<input type="range" min="-2" max="2" value="0" step="1" onchange="changeDetailLevel(this.value)"/>
+						<span id="detailLevel">No opinion</span>
+
+						<script type="text/javascript">
+							function changeComprehensionLevel(newValue)
+							{
+								var comprehension;
+								switch (newValue)
+								{
+									case '-2':
+										comprehension = "Completely confusing";
+										break;
+
+									case '-1':
+										comprehension = "Mostly incomprehensible";
+										break;
+
+									case '0': 
+										comprehension = "Partially understandable";
+										break;
+
+									case '1':
+										comprehension = "Mostly understandable";
+										break;
+
+									case '2':
+										comprehension = "Completely understandable";
+										break;
+								}
+
+								document.getElementById("comprehensionLevel").innerHTML = comprehension;
+							}
+
+							function changeDetailLevel(newValue)
+							{
+								var detail;
+								switch (newValue)
+								{
+									case '-2':
+										detail = "Needs more information";
+										break;
+
+									case '-1':
+										detail = "Could use more details";
+										break;
+
+									case '0': 
+										detail = "Good level of detail";
+										break;
+
+									case '1':
+										detail = "Too much information";
+										break;
+
+									case '2':
+										detail = "Way too much detail";
+										break;
+								}
+
+								document.getElementById("detailLevel").innerHTML = detail;
+							}
+						</script>
+					</div>
+
+					<div id="feedback">
+						<div class="suggestion">
+							<b>Suggestion 1 by Alice</b>
+							<button>Endorse</button>
+							<span class="endorsment">88% (8/9)</span>
+							<i>Try "This_alternative_description"</i>
+
+							<b>Comment by Bob:</b> Very nice!
+						</div>
+
+						<div class="suggestion">
+							<b>Suggestion 2 by Bob</b>
+							<button>Endorse</button>
+							<span class="endorsment">88% (8/9)</span>
+							<i>This is a nice description.</i>
+
+							<b>Comment by Alice:</b> I think so too.
+						</div>
+					</div>
+
+					<div id="recentActivity">
+						<button>8080 - new project</button>
+						<button>8012 - suggestion</button>
+						<button>8013 - new project</button>
+						<button>8009 - comment</button>
+					</div>
+				</div>
+			</div>
+		<div class="footer">
+		</div>
+	</body>
+</html>
