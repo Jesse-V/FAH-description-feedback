@@ -1,0 +1,84 @@
+
+/*	Pane organization */
+
+#leftPane, #centerPane, #rightPane
+{
+	display: block;
+	height: 100%;
+	width: 32%;
+	top: 0px;
+}
+
+#leftPane, #rightPane
+{
+	position: absolute;
+}
+
+#leftPane, #centerPane
+{
+	border-right: 1px solid gray; 
+}
+
+#leftPane
+{
+	left: 0px;
+}
+
+#centerPane
+{
+	margin: 0px auto;
+}
+
+#rightPane
+{
+	right: 0px;
+}
+
+
+
+/*	Center pane */
+
+#projectNum
+{
+	display: block;
+}
+
+#project-info
+{
+	display: block;
+	max-height: 300px;
+	overflow: auto;
+}
+
+
+
+/*	Center pane's feedback */
+
+.suggestion
+{
+	margin: 10px 0px;
+}
+
+.suggestion .text, .suggestion .comment
+{
+	padding-left: 10px;
+}
+
+.suggestion .text
+{
+	font-style: italic;
+}
+
+
+
+/*	Right pane */
+
+#recentContribs button, #recentActivity button
+{
+	display: block;
+}
+
+#lastActivity
+{
+	/* todo: shove to bottom */
+}

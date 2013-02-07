@@ -8,7 +8,7 @@
 
 		<link href="http://fonts.googleapis.com/css?family=Syncopate:700|Carme" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="css/common.css">
-		<link rel="stylesheet" type="text/css" href="css/Home.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 
 	<body>
@@ -26,9 +26,9 @@
 
 						<table>
 							<tr>
-								<td>A</td>
+								<td>John</td>
 								<td>You</td>
-								<td>B</td>
+								<td>Chris</td>
 							</tr>
 							<tr>
 								<td>36</td>
@@ -51,7 +51,7 @@
 						<button>4926 - suggestion</button>
 					</div>
 				</div>
-
+				
 				<div id="centerPane">
 					<span id="projectNum">Projects 2968, 2969, and 2973</span>
 
@@ -59,20 +59,20 @@
 						This project folds a small beta hairpin peptide (trpzip2). We aim to simulate the IR spectra of the trpzip2 folding. Project 2972 corresponds to simulations at 400K, while Project 2973 corresponds to simulations at 450K.<br>
 
 						<h3><i>Technical details</i></h3>
-						This project (Trpzip2 Folding at 400K) is set for 80.70 points, a preferred deadline of 16.70 days, and a final deadline 24.00 days.  This project uses the GROMACS FAH core software and is hosted by Folding@home server 143.89.28.70.<BR><BR>
+						This project (Trpzip2 Folding at 400K) is set for 80.70 points, a preferred deadline of 16.70 days, and a final deadline 24.00 days.  This project uses the GROMACS FAH core software and is hosted by Folding@home server 143.89.28.70.<br><br>
 
-						<H3><I>Manager for this project</I></H3>
+						<h3><i>Manager for this project</i></h3>
 						<img src=http://compbio.ust.hk/public_html/Huang_pic.jpg align=right>
 
 						This project is managed by Prof. Xuhui Huang at Hong Kong University of Science and Technology.  The main goal of the Huang lab is to understand and manipulate fundamental biological processes associated with conformational changes by developing and applying novel computational tools which bridge the gap between experiments and simulations.  Examples of our interested research areas include RNA folding, protein misfolding/aggregration, conformational changes in Transcription Elongation, and the development of Markov State Models for long timescale dynamics. We have set up a hub for Folding@Home in Asia.
 					</span>
 
 					<div id="opinion">
-						<input type="range" min="-2" max="2" value="0" step="1" onchange="changeComprehensionLevel(this.value)"/>
-						<span id="comprehensionLevel">No opinion</span>
+						<input type="range" min="0" max="4" value="0" step="4" onchange="changeComprehensionLevel(this.value)"/>
+						<span id="comprehensionLevel">Completely understandable</span>
 
 						<input type="range" min="-2" max="2" value="0" step="1" onchange="changeDetailLevel(this.value)"/>
-						<span id="detailLevel">No opinion</span>
+						<span id="detailLevel">Good level of detail</span>
 
 						<script type="text/javascript">
 							function changeComprehensionLevel(newValue)
@@ -80,23 +80,23 @@
 								var comprehension;
 								switch (newValue)
 								{
-									case '-2':
+									case '0':
 										comprehension = "Completely confusing";
 										break;
 
-									case '-1':
+									case '1':
 										comprehension = "Mostly incomprehensible";
 										break;
 
-									case '0': 
+									case '2': 
 										comprehension = "Partially understandable";
 										break;
 
-									case '1':
+									case '3':
 										comprehension = "Mostly understandable";
 										break;
 
-									case '2':
+									case '4':
 										comprehension = "Completely understandable";
 										break;
 								}
@@ -137,32 +137,41 @@
 
 					<div id="feedback">
 						<div class="suggestion">
-							<b>Suggestion 1 by Alice</b>
+							<span class="title">Suggestion 1 by Alice</span>
 							<button>Endorse</button>
-							<span class="endorsment">88% (8/9)</span>
-							<i>Try "This_alternative_description"</i>
+							<div class="endorsment">88% (8/9)</span>
+							<div class="text">Try "This_alternative_description"</div>
 
-							<b>Comment by Bob:</b> Very nice!
+							<div class="comment">
+								<span class="commentTitle">Comment by Bob:</span> Very nice!
+							</div>
 						</div>
 
 						<div class="suggestion">
-							<b>Suggestion 2 by Bob</b>
+							<span class="title">Suggestion 2 by Bob</span>
 							<button>Endorse</button>
-							<span class="endorsment">88% (8/9)</span>
-							<i>This is a nice description.</i>
+							<div class="endorsment">88% (8/9)</div>
+							<div class="text">This is a nice description.</div>
 
-							<b>Comment by Alice:</b> I think so too.
+							<div class="comment">
+								<span class="commentTitle">Comment by Alice:</span> I think so too.
+							</div>
 						</div>
 					</div>
+				</div>
 
+				<div id="rightPane">
 					<div id="recentActivity">
 						<button>8080 - new project</button>
 						<button>8012 - suggestion</button>
 						<button>8013 - new project</button>
 						<button>8009 - comment</button>
 					</div>
+
+					<div id="lastActivity">Last Activity: [timestamp]</div>
 				</div>
 			</div>
+		</div>
 		<div class="footer">
 		</div>
 	</body>

@@ -1,0 +1,50 @@
+
+html
+{
+	 height: 100%; /* relates to .page's min-height property */
+}
+
+body
+{
+	margin: 15px 0px;
+	padding: 0px;
+	height: 90%;
+
+	background: #68b;
+	background-image: linear-gradient(left, #57c 15%, #68c 30%, #68b 81%);
+	background-image: -o-linear-gradient(left, #57c 15%, #68c 30%, #68b 81%);
+	background-image: -moz-linear-gradient(left, #57c 15%, #68c 30%, #68b 81%);
+	background-image: -webkit-linear-gradient(left, #57c 15%, #68c 30%, #68b 81%);
+	background-image: -ms-linear-gradient(left, #57c 15%, #68c 30%, #68b 81%);
+}
+
+#page
+{
+	font-size: 14pt;
+	background-color: rgba(255, 255, 255, 0.0);
+	width: 90%;
+	min-height: 100%; /* the height of the webpage is a minimum of 80% the height of the browser window */
+	min-width: 780px;
+	margin: 0px auto;
+}
+
+#content
+{
+	background: white;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding: 70px 15px 10px;
+	font-family: "Times New Roman";
+}
+
+#content p
+{
+	margin: 10px;
+	text-indent: 30px;
+}
+
+.footer
+{
+	min-height: 5%;
+	max-height: 30px;
+}
