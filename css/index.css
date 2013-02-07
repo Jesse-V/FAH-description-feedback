@@ -51,6 +51,14 @@
 }
 
 
+/*	Center pane's opinion area */
+
+#opinion input
+{
+	display: block;
+}
+
+
 
 /*	Center pane's feedback */
 
@@ -61,7 +69,7 @@
 
 .suggestion .text, .suggestion .comment
 {
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .suggestion .text
