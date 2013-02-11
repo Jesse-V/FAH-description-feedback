@@ -52,6 +52,10 @@
 #projectNum
 {
 	display: block;
+	text-align: center;
+	font-style: italic;
+	text-decoration: underline;
+	margin-bottom: 10px;
 }
 
 #project-info
@@ -59,6 +63,7 @@
 	display: block;
 	max-height: 300px;
 	overflow: auto;
+	font-size: 12pt;
 }
 
 
@@ -73,30 +78,119 @@
 
 /*	Center pane's feedback */
 
-.ratings
+#provideOpinion
+{
+	background-color: gray;
+}
+
+#provideOpinion textarea
+{
+	display: block;
+	width: 90%;
+	height: 100px;
+	resize: none;
+	overflow: auto;
+	margin: 0px auto;
+	padding: 5px;
+}
+
+#provideOpinion #ratings
+{
+	width: 90%;
+	margin-top: 10px;
+}
+
+#provideOpinion #ratings .scale
+{
+	width: 40%;
+}
+
+#provideOpinion #ratings .scale input
 {
 	width: 100%;
 }
 
-.ratings td input
+#provideOpinion #ratings .level
 {
-	width: 50%;
+	padding-left: 10px;
+	font-weight: bold;
 }
 
-.suggestion
+#provideOpinion .submitButton
 {
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+}
+
+#provideOpinion .submitButton button
+{
+	width: 100%;
+	font-size: 12pt;
+	padding: 10px 0px;
 	margin: 10px 0px;
 }
 
-.suggestion .text, .suggestion .comment
+#feedback .suggestion
 {
-	padding-left: 15px;
+	margin: 10px 0px;
+	padding-left: 20px;
 }
 
-.suggestion .text
+#feedback .suggestion .text, .suggestion .comment
+{
+	padding-left: inherit;
+}
+
+#feedback .suggestion .text
 {
 	font-style: italic;
 }
+
+#feedback .commentComment
+{
+	margin-left: 20px;
+}
+
+#feedback .commentComment td
+{
+	width: 300px;
+	height: 75px;
+}
+
+#feedback .commentComment textarea
+{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	resize: none;
+}
+
+#feedback .commentComment .submit
+{
+	padding-left: 20px;
+}
+
+#feedback .commentComment button
+{
+	padding: 10px 15px;
+	font-size: 10pt;
+	font-weight: bold;
+}
+/*
+#feedback .submitComment textarea
+{
+	margin-left: 20px;
+	
+	padding: 5px;
+	resize: none;
+	width: 40%;
+}
+
+#feedback .submitComment button
+{
+	padding: 10px auto;
+}*/
 
 
 
@@ -115,5 +209,6 @@
 
 #lastActivity
 {
-	/* todo: shove to bottom */
+	position: absolute;
+	bottom: 30px;
 }
