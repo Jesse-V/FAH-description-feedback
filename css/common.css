@@ -22,7 +22,7 @@ body
 	background: white;
 	min-height: 100%; /* the height of the webpage is a minimum of 80% the height of the browser window */
 	width: 90%;
-	min-width: 780px;
+	min-width: 700px;
 	border-radius: 30px;
 	padding: 10px 15px 10px;
 	margin: 0px auto;

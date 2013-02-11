@@ -124,7 +124,7 @@
 
 #provideOpinion #ratings
 {
-	width: 90%;
+	width: 100%;
 	margin-top: 10px;
 }
 
@@ -142,6 +142,13 @@
 {
 	padding-left: 10px;
 	font-weight: bold;
+}
+
+#provideOpinion #ratings .score
+{
+	font-size: 10pt;
+	padding-right: 15px;
+	text-align: right;
 }
 
 #provideOpinion .submitButton
