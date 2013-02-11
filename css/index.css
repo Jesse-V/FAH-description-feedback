@@ -1,37 +1,48 @@
 
+#header
+{
+	width: 90%;
+	font-size: 24px;
+	text-align: right;
+	margin: 5px 0px;
+}
+
+
 /*	Pane organization */
 
 #leftPane, #centerPane, #rightPane
 {
 	display: block;
 	height: 100%;
-	width: 32%;
 	top: 0px;
 }
 
 #leftPane, #rightPane
 {
-	position: absolute;
+	width: 15%;
+	text-align: center;
 }
 
 #leftPane, #centerPane
 {
-	border-right: 1px solid gray; 
+	border-right: 1px solid gray;
+	padding-right: 15px;
 }
 
 #leftPane
 {
-	left: 0px;
+	float: left;
 }
 
 #centerPane
 {
 	margin: 0px auto;
+	width: 60%;
 }
 
 #rightPane
 {
-	right: 0px;
+	float: right;
 }
 
 
@@ -62,6 +73,16 @@
 
 /*	Center pane's feedback */
 
+.ratings
+{
+	width: 100%;
+}
+
+.ratings td input
+{
+	width: 50%;
+}
+
 .suggestion
 {
 	margin: 10px 0px;
@@ -81,9 +102,15 @@
 
 /*	Right pane */
 
+#rightPane
+{
+
+}
+
 #recentContribs button, #recentActivity button
 {
 	display: block;
+	margin: 0px auto;
 }
 
 #lastActivity
