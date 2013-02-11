@@ -19,10 +19,10 @@
 		<div id="content">
 			<div id="leftPane">
 				<div id="userStats">
-					<span id="welcome">Welcome Bob!</span>
-					<span id="rank">Rank 3</span>
+					<div id="welcome">Welcome Bob!</div>
+					<div id="rank">Rank 3</div>
 
-					<table>
+					<table id="rankings">
 						<tr>
 							<td>John</td>
 							<td>You</td>
@@ -37,6 +37,8 @@
 				</div>
 
 				<div id="recentContribs">
+					<label>Recent Contributions</label>
+
 					<button>8033 - suggestion</button>
 					<button>8014 - comment</button>
 					<button>7456 - suggestion</button>
@@ -52,13 +54,15 @@
 
 			<div id="rightPane">
 				<div id="recentActivity">
+					<label>Recent Activity</label>
+
 					<button>8080 - new project</button>
 					<button>8012 - suggestion</button>
 					<button>8013 - new project</button>
 					<button>8009 - comment</button>
 				</div>
 
-				<div id="lastActivity">Last Activity: [timestamp]</div>
+				<!--<div id="lastActivity">Last Activity: [timestamp]</div>-->
 			</div>
 			
 			<div id="centerPane">
@@ -80,7 +84,7 @@
 					<table id="ratings">
 						<tr>
 							<td class="scale">
-								<input type="range" min="0" max="4" value="0" step="1" onchange="changeComprehensionLevel(this.value)"/>
+								<input type="range" min="0" max="4" value="4" step="1" onchange="changeComprehensionLevel(this.value)"/>
 							</td>
 
 							<td class="level">
@@ -134,7 +138,7 @@
 					<div class="suggestion">
 						<span class="title">Suggestion 2 by Bob</span>
 						<button>Endorse</button>
-						<span class="endorsment">88% (8/9)</span>
+						<span class="endorsment">83% (5/6)</span>
 
 						<div class="text">This is a nice description.</div>
 
